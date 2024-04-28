@@ -1,5 +1,4 @@
 from PIL import Image, ImageDraw
-import numpy as np
 
 def text_to_rgb(text):
     return [(ord(char) >> 6, (ord(char) >> 3) & 7, ord(char) & 7) for char in text]
